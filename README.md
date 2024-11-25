@@ -13,15 +13,17 @@ c)Clean Architecture
 
 d)GetIt Dependency Injection
 
+Features Integrated-
 
 Have integrated Authentication (Signup,Login and Logout) using Local storage Hive.
 
-
 Have used Bloc State Management for managing state of app.
 
+Have used Clean Architecture for well structuring of code 
 
-Have used Clean Architecture for well structuring of code
+Adding task using hive (Pressing add task button)
 
-Added the task list using Hive itself.
+Updating task ( Use pencil icon)
 
-(On task screen) have done only adding the task and updating the task due to time constraints.
+
+
