@@ -14,12 +14,12 @@ class AppRoutes {
       case auth:
 
       // case home:
-      return MaterialPageRoute(builder: (_) => AuthScreen());
+      return MaterialPageRoute(builder: (_) => const AuthScreen());
 
       case task:
 
       
-      return MaterialPageRoute(builder: (_) => HomeScreen());
+      return MaterialPageRoute(builder: (_) => const HomeScreen());
       
        default:
          return _errorRoute();

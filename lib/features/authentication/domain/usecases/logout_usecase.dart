@@ -13,7 +13,7 @@ class LogOutUseCase {
     try {
     await authRepository.logout(); 
      Navigator.of(NavigationService.navigatorKey.currentContext!)
-            .pushNamed(AppRoutes.auth);
+            .pushReplacementNamed(AppRoutes.auth);
     } catch (e) {
       rethrow;
     }

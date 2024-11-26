@@ -16,3 +16,9 @@ class UpdateTaskEvent extends TaskEvent{
    final TaskStatus status;
  UpdateTaskEvent(this.taskModel,this.index,this.status);
 }
+
+class DeleteTaskEvent extends TaskEvent{
+   final TaskModel taskModel;
+  
+ DeleteTaskEvent(  this.taskModel,);
+}

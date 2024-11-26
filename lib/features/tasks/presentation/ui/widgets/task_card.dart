@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart'; 
 import 'package:get_it/get_it.dart';
 import 'package:kinzy_todo_app/core/utils/app_font_styles.dart';
+import 'package:kinzy_todo_app/core/widgets/app_button.dart';
 import 'package:kinzy_todo_app/features/authentication/data/models/task_model.dart';
 import 'package:kinzy_todo_app/features/tasks/presentation/bloc/tast_event.dart';
 
@@ -34,8 +35,9 @@ class TaskCard extends StatelessWidget {
             const SizedBox(height: 4),
             Text(task.description,  style: AppTextStyles.bodyLarge,),
             const SizedBox(height: 8),
-            Text('Time: ${task.time}',style: AppTextStyles.bodyLarge,),
-            const SizedBox(height: 16),
+            Text(DateTime.now().toString(),  style: AppTextStyles.bodyLarge,),
+            const SizedBox(height: 8),
+           
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -43,10 +45,15 @@ class TaskCard extends StatelessWidget {
                   icon: const Icon(Icons.edit),
                   onPressed: () {
                  _showAddTaskDialog(context,task);
-                    // Edit Task action
                   },
-                ),
-              
+                ), 
+                       IconButton(
+                  icon: const Icon(Icons.delete),
+                  onPressed: () { 
+                  TaskBloc taskBloc = GetIt.I<TaskBloc>();
+                  taskBloc.add(DeleteTaskEvent(task));
+                  },
+                ), 
               ],
             ),
           ],
@@ -76,15 +83,7 @@ class TaskCard extends StatelessWidget {
                 controller: descriptionController,
                 decoration:   InputDecoration(labelText: 'Description',labelStyle: AppTextStyles.bodyMedium),
               ),
-              DropdownButton(
-                value: status,
-                items: TaskStatus.values.map((e) =>
-               DropdownMenuItem<TaskStatus>(child: Text(e.name),value: e),).toList(), onChanged: (v){
-                status = v!;
-               })
-
-             
-            ],
+           ],
           ),
           actions: [
             TextButton(
@@ -103,7 +102,6 @@ class TaskCard extends StatelessWidget {
                   time: timeController.text,
                 );
                 taskBloc.add(UpdateTaskEvent(task,index,status));
-
                 Navigator.of(context).pop();
               },
               child: const Text('Submit'),

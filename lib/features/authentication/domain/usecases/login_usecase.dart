@@ -14,7 +14,7 @@ class LoginUseCase {
       bool userExists = await authRepository.login(user);
       if (userExists == true) {
         Navigator.of(NavigationService.navigatorKey.currentContext!)
-            .pushNamed(AppRoutes.task);
+            .pushReplacementNamed(AppRoutes.task);
       } else {
         ScaffoldMessenger.of(NavigationService.navigatorKey.currentContext!)
             .showSnackBar(

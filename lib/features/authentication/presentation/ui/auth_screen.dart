@@ -6,8 +6,8 @@ import 'package:kinzy_todo_app/features/authentication/presentation/bloc/auth_bl
 import 'package:kinzy_todo_app/features/authentication/presentation/bloc/auth_state.dart';
 import 'package:kinzy_todo_app/features/authentication/presentation/ui/widgets/auth_tab.dart';
 
-import 'widgets/login_view.dart';
-import 'widgets/signup_view.dart';
+import 'widgets/login_widget.dart';
+import 'widgets/signup_widget.dart';
  
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});

@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kinzy_todo_app/features/tasks/domain/todo_repo.dart';
+import 'package:kinzy_todo_app/features/tasks/domain/task_repo.dart';
 import 'package:kinzy_todo_app/features/tasks/presentation/bloc/task_state.dart';
 import 'package:kinzy_todo_app/features/tasks/presentation/bloc/tast_event.dart';
 
@@ -10,6 +10,7 @@ final TodoRepo todoRepo;
     on<AddTaskEvent>(_addTask);
     on<GetTaskEvent>(_getTask);
     on<UpdateTaskEvent>(_updateTask);
+    on<DeleteTaskEvent>(_deleteTask);
   }
 
   FutureOr<void> _getTask(event, emit) async{
@@ -30,9 +31,19 @@ final TodoRepo todoRepo;
   FutureOr<void> _updateTask(UpdateTaskEvent event, emit)async {
     emit(state.copyWith(addTaskStatus: ApiStatus.loading));
     final tasks = state.taskList.toList();
-       tasks[event.index] = tasks[event.index].copyWith(status: event.status);
+       tasks[event.index] = tasks[event.index].copyWith(status: event.status,name: event.taskModel.name,
+       description: event.taskModel.description);
     
     await todoRepo.updateTask(event.taskModel,event.index,);
+    emit(state.copyWith(taskList: tasks, addTaskStatus: ApiStatus.loaded));
+  }
+
+
+    FutureOr<void> _deleteTask(DeleteTaskEvent event, emit)async {
+    emit(state.copyWith(addTaskStatus: ApiStatus.loading));
+    final tasks = state.taskList.toList();
+    await todoRepo.deleteTask(event.taskModel);
+    tasks.remove(event.taskModel);
     emit(state.copyWith(taskList: tasks, addTaskStatus: ApiStatus.loaded));
   }
 }

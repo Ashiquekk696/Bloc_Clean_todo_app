@@ -5,8 +5,8 @@ import 'package:kinzy_todo_app/features/authentication/domain/usecases/login_use
 import 'package:kinzy_todo_app/features/authentication/domain/usecases/logout_usecase.dart';
 import 'package:kinzy_todo_app/features/authentication/domain/usecases/signup_usecase.dart';
 import 'package:kinzy_todo_app/features/authentication/presentation/bloc/auth_bloc.dart';
-import 'package:kinzy_todo_app/features/tasks/data/todo_repo_impl.dart';
-import 'package:kinzy_todo_app/features/tasks/domain/todo_repo.dart';
+import 'package:kinzy_todo_app/features/tasks/data/task_repo_impl.dart';
+import 'package:kinzy_todo_app/features/tasks/domain/task_repo.dart';
 import 'package:kinzy_todo_app/features/tasks/presentation/bloc/task_bloc.dart';
 
 import '../../features/authentication/data/repository/auth_repository.dart';
