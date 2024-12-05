@@ -1,4 +1,4 @@
-Todo App
+# Todo App
 A simple Todo app built with Flutter following the principles of Clean Architecture. The app utilizes BLoC for state management, GetIt for Dependency Injection, and Hive for local storage.
 
 Features
@@ -20,17 +20,17 @@ Domain Layer - Contains the business logic, models, and use cases.
 Presentation Layer - Responsible for UI components and state management with BLoC.
 
 
-### Setup
+## Setup
 
 To get started with the app, clone this repository and install the required dependencies.
 
-## Clone the repo:
+### Clone the repo:
  
 `git clone https://github.com/yourusername/todo-app.git
 `
 `cd todo-app
 `
-# Install the dependencies:
+### Install the dependencies:
  
 `flutter pub get
 `Run the app:
