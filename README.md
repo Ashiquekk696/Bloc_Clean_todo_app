@@ -13,18 +13,25 @@ Create, read, update, and delete tasks.
 Tasks are persisted locally using Hive.
 State management is handled by BLoC.
 Dependency Injection using GetIt for managing app dependencies.     
-      
+
 Technologies Used:  
 Flutter - Cross-platform app development framework.  
+
 BLoC - State management pattern.  
+
 Clean Architecture - Organizes code to ensure separation of concerns.  
+
 GetIt - Service locator for Dependency Injection.  
+
 Hive - Lightweight NoSQL database for local storage.         
+
 Architecture:  
 This app follows Clean Architecture, dividing the code into several layers:  
 
-Data Layer - Responsible for managing data (local storage with Hive).
-Domain Layer - Contains the business logic, models, and use cases.
+Data Layer - Responsible for managing data (local storage with Hive).  
+
+Domain Layer - Contains the business logic, models, and use cases.  
+
 Presentation Layer - Responsible for UI components and state management with BLoC.
 
 
