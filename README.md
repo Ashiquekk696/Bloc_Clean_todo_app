@@ -1,7 +1,9 @@
 # Todo App
 A simple Todo app built with Flutter following the principles of Clean Architecture. The app utilizes BLoC for state management, GetIt for Dependency Injection, and Hive for local storage.
 
-Here is a quick demo of the App  
+## DEMO
+
+Here is a quick demo of the App   
 <img src="assets/screenshot/todo_rec2.gif" alt="Demo GIF" width="500" height="300">
 
 
