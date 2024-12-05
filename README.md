@@ -4,7 +4,7 @@ A simple Todo app built with Flutter following the principles of Clean Architect
 ## Demo
 
 Here is a quick demo of the App   
-<img src="assets/screenshot/todo_rec2.gif" alt="Demo GIF" width="500" height="300">
+<img src="assets/screenshot/todo_rec2.gif" alt="Demo GIF" width="500" height="300">         
 
 
 
@@ -12,13 +12,13 @@ Features:
 Create, read, update, and delete tasks.
 Tasks are persisted locally using Hive.
 State management is handled by BLoC.
-Dependency Injection using GetIt for managing app dependencies.      
+Dependency Injection using GetIt for managing app dependencies.           
 Technologies Used:  
 Flutter - Cross-platform app development framework.  
 BLoC - State management pattern.  
 Clean Architecture - Organizes code to ensure separation of concerns.  
 GetIt - Service locator for Dependency Injection.  
-Hive - Lightweight NoSQL database for local storage.    
+Hive - Lightweight NoSQL database for local storage.         
 Architecture:  
 This app follows Clean Architecture, dividing the code into several layers:  
 
