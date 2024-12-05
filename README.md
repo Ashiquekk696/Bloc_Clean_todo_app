@@ -8,13 +8,13 @@ Here is a quick demo of the App
 
 
 
-Features:    
+#### Features:    
 Create, read, update, and delete tasks.
 Tasks are persisted locally using Hive.
 State management is handled by BLoC.
 Dependency Injection using GetIt for managing app dependencies.     
 
-Technologies Used:  
+#### Technologies Used:  
 Flutter - Cross-platform app development framework.  
 
 BLoC - State management pattern.  
@@ -25,7 +25,7 @@ GetIt - Service locator for Dependency Injection.
 
 Hive - Lightweight NoSQL database for local storage.         
 
-Architecture:  
+#### Architecture:  
 This app follows Clean Architecture, dividing the code into several layers:  
 
 Data Layer - Responsible for managing data (local storage with Hive).  
