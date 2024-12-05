@@ -1,7 +1,7 @@
  
 import 'package:flutter/material.dart';
-import 'package:kinzy_todo_app/features/authentication/presentation/ui/auth_screen.dart';
-import 'package:kinzy_todo_app/features/tasks/presentation/ui/task_screen.dart';
+import 'package:todo_bloc_clean_app/features/authentication/presentation/ui/auth_screen.dart';
+import 'package:todo_bloc_clean_app/features/tasks/presentation/ui/task_screen.dart';
  
  
 

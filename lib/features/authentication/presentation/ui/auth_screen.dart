@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
-import 'package:kinzy_todo_app/core/utils/colors.dart';
-import 'package:kinzy_todo_app/features/authentication/presentation/bloc/auth_bloc.dart';
-import 'package:kinzy_todo_app/features/authentication/presentation/bloc/auth_state.dart';
-import 'package:kinzy_todo_app/features/authentication/presentation/ui/widgets/auth_tab.dart';
+import 'package:todo_bloc_clean_app/core/utils/colors.dart';
+import 'package:todo_bloc_clean_app/features/authentication/presentation/bloc/auth_bloc.dart';
+import 'package:todo_bloc_clean_app/features/authentication/presentation/bloc/auth_state.dart';
+import 'package:todo_bloc_clean_app/features/authentication/presentation/ui/widgets/auth_tab.dart';
 
 import 'widgets/login_widget.dart';
 import 'widgets/signup_widget.dart';

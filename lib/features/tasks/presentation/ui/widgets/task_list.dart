@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kinzy_todo_app/features/authentication/data/models/task_model.dart';
-import 'package:kinzy_todo_app/features/tasks/presentation/bloc/task_bloc.dart';
+import 'package:todo_bloc_clean_app/features/authentication/data/models/task_model.dart';
+import 'package:todo_bloc_clean_app/features/tasks/presentation/bloc/task_bloc.dart';
 
 import '../../bloc/task_state.dart';
 import 'task_column.dart';

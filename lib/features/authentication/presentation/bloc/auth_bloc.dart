@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kinzy_todo_app/features/authentication/domain/entity/user_entity.dart';
-import 'package:kinzy_todo_app/features/authentication/domain/usecases/logout_usecase.dart';
+import 'package:todo_bloc_clean_app/features/authentication/domain/entity/user_entity.dart';
+import 'package:todo_bloc_clean_app/features/authentication/domain/usecases/logout_usecase.dart';
 
 import '../../domain/usecases/login_usecase.dart';
 import '../../domain/usecases/signup_usecase.dart';

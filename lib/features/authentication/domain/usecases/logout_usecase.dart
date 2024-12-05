@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kinzy_todo_app/core/utils/routes.dart';
+import 'package:todo_bloc_clean_app/core/utils/routes.dart';
 
 import '../../../../core/utils/navigation_service.dart';
 import '../repository/auth_repository.dart';

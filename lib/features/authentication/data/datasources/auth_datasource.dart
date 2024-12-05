@@ -1,5 +1,5 @@
 import 'package:hive/hive.dart';
-import 'package:kinzy_todo_app/features/authentication/data/models/task_model.dart';
+import 'package:todo_bloc_clean_app/features/authentication/data/models/task_model.dart';
 import '../models/user_model.dart';
 
 class AuthDataSource {

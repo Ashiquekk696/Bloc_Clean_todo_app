@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kinzy_todo_app/core/widgets/app_button.dart';
+import 'package:todo_bloc_clean_app/core/widgets/app_button.dart';
 
 class AddTaskButton extends StatelessWidget {
   final VoidCallback onPressed;

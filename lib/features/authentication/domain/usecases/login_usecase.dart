@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:kinzy_todo_app/core/utils/navigation_service.dart';
-import 'package:kinzy_todo_app/core/utils/routes.dart';
-import 'package:kinzy_todo_app/features/authentication/domain/entity/user_entity.dart';
-import 'package:kinzy_todo_app/features/authentication/domain/repository/auth_repository.dart';
+import 'package:todo_bloc_clean_app/core/utils/navigation_service.dart';
+import 'package:todo_bloc_clean_app/core/utils/routes.dart';
+import 'package:todo_bloc_clean_app/features/authentication/domain/entity/user_entity.dart';
+import 'package:todo_bloc_clean_app/features/authentication/domain/repository/auth_repository.dart';
 
 class LoginUseCase {
   final AuthRepository authRepository;

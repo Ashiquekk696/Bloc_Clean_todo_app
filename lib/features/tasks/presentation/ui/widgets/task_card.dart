@@ -1,10 +1,10 @@
 
 import 'package:flutter/material.dart'; 
 import 'package:get_it/get_it.dart';
-import 'package:kinzy_todo_app/core/utils/app_font_styles.dart';
-import 'package:kinzy_todo_app/core/widgets/app_button.dart';
-import 'package:kinzy_todo_app/features/authentication/data/models/task_model.dart';
-import 'package:kinzy_todo_app/features/tasks/presentation/bloc/tast_event.dart';
+import 'package:todo_bloc_clean_app/core/utils/app_font_styles.dart';
+ 
+import 'package:todo_bloc_clean_app/features/authentication/data/models/task_model.dart';
+import 'package:todo_bloc_clean_app/features/tasks/presentation/bloc/tast_event.dart';
 
 import '../../../../../core/utils/colors.dart';
 import '../../bloc/task_bloc.dart'; 

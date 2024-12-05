@@ -1,4 +1,4 @@
-name: Todo_bloc_clean_app
+name: todo_bloc_clean_app
 description: "A simple Todo app built with Flutter following the principles of Clean Architecture. The app utilizes BLoC for state management, GetIt for Dependency Injection, and Hive for local storage."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.

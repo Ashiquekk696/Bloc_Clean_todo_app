@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:kinzy_todo_app/core/utils/app_font_styles.dart';
-import 'package:kinzy_todo_app/features/authentication/data/models/task_model.dart';
+import 'package:todo_bloc_clean_app/core/utils/app_font_styles.dart';
+import 'package:todo_bloc_clean_app/features/authentication/data/models/task_model.dart';
 
 import '../../../../../core/utils/colors.dart';
 import 'task_card.dart';
 import 'package:flutter/material.dart';
-import 'package:kinzy_todo_app/core/utils/app_font_styles.dart';
-import 'package:kinzy_todo_app/features/authentication/data/models/task_model.dart';
+import 'package:todo_bloc_clean_app/core/utils/app_font_styles.dart';
+import 'package:todo_bloc_clean_app/features/authentication/data/models/task_model.dart';
 
 import '../../../../../core/utils/colors.dart';
 import 'task_card.dart';

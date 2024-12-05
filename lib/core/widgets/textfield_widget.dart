@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kinzy_todo_app/core/utils/app_font_styles.dart';
-import 'package:kinzy_todo_app/core/utils/colors.dart';
-import 'package:kinzy_todo_app/core/utils/responive.dart';
+import 'package:todo_bloc_clean_app/core/utils/app_font_styles.dart';
+import 'package:todo_bloc_clean_app/core/utils/colors.dart';
+import 'package:todo_bloc_clean_app/core/utils/responive.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({

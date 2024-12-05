@@ -1,6 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
-import 'package:kinzy_todo_app/features/authentication/data/models/task_model.dart';
+import 'package:todo_bloc_clean_app/features/authentication/data/models/task_model.dart';
 
 class TaskState {
   final ApiStatus getTaskStatus;

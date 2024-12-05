@@ -1,4 +1,4 @@
-import 'package:kinzy_todo_app/features/authentication/data/models/task_model.dart';
+import 'package:todo_bloc_clean_app/features/authentication/data/models/task_model.dart';
 
 abstract class TaskEvent{}
 

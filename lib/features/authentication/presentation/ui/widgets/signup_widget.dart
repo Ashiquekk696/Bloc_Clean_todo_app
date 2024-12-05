@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kinzy_todo_app/core/utils/app_font_styles.dart';
-import 'package:kinzy_todo_app/core/utils/responive.dart';
-import 'package:kinzy_todo_app/features/authentication/presentation/ui/widgets/signup_form.dart';
+import 'package:todo_bloc_clean_app/core/utils/app_font_styles.dart';
+import 'package:todo_bloc_clean_app/core/utils/responive.dart';
+import 'package:todo_bloc_clean_app/features/authentication/presentation/ui/widgets/signup_form.dart';
 
 import '../../../../../core/utils/colors.dart';
 import '../../bloc/auth_bloc.dart';

@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kinzy_todo_app/features/tasks/domain/task_repo.dart';
-import 'package:kinzy_todo_app/features/tasks/presentation/bloc/task_state.dart';
-import 'package:kinzy_todo_app/features/tasks/presentation/bloc/tast_event.dart';
+import 'package:todo_bloc_clean_app/features/tasks/domain/task_repo.dart';
+import 'package:todo_bloc_clean_app/features/tasks/presentation/bloc/task_state.dart';
+import 'package:todo_bloc_clean_app/features/tasks/presentation/bloc/tast_event.dart';
 
 class TaskBloc extends Bloc<TaskEvent, TaskState> {
 final TodoRepo todoRepo;

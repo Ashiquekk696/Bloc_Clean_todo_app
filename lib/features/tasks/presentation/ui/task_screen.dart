@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:get_it/get_it.dart';
-import 'package:kinzy_todo_app/core/utils/app_font_styles.dart';
-import 'package:kinzy_todo_app/core/widgets/app_button.dart';
-import 'package:kinzy_todo_app/features/tasks/presentation/bloc/task_state.dart';
-import 'package:kinzy_todo_app/features/tasks/presentation/bloc/tast_event.dart';
-import 'package:kinzy_todo_app/features/tasks/presentation/ui/widgets/add_task_button.dart';
-import 'package:kinzy_todo_app/features/tasks/presentation/ui/widgets/task_appbar.dart';
-import 'package:kinzy_todo_app/features/tasks/presentation/ui/widgets/task_column.dart';
-import 'package:kinzy_todo_app/features/tasks/presentation/ui/widgets/task_list.dart';
+import 'package:get_it/get_it.dart';  
+import 'package:todo_bloc_clean_app/features/tasks/presentation/bloc/task_state.dart';
+import 'package:todo_bloc_clean_app/features/tasks/presentation/bloc/tast_event.dart'; 
+import 'package:todo_bloc_clean_app/features/tasks/presentation/ui/widgets/task_appbar.dart'; 
+import 'package:todo_bloc_clean_app/features/tasks/presentation/ui/widgets/task_list.dart';
 
 import '../../../../core/utils/colors.dart';
 import '../../../authentication/data/models/task_model.dart';
