@@ -37,58 +37,6 @@ class _HomeScreenState extends State<HomeScreen> {
     _taskBloc.add(UpdateTaskEvent(updatedTask, index, newStatus));
   }
 
-  void _showAddTaskDialog(BuildContext context) {
-    final TextEditingController nameController = TextEditingController();
-    final TextEditingController descriptionController = TextEditingController();
-
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          title: const Text("Add Task"),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                controller: nameController,
-                decoration: InputDecoration(
-                  labelText: 'Task Name',
-                  labelStyle: AppTextStyles.bodyMedium,
-                ),
-              ),
-              TextField(
-                controller: descriptionController,
-                decoration: InputDecoration(
-                  labelText: 'Description',
-                  labelStyle: AppTextStyles.bodyMedium,
-                ),
-              ),
-            ],
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.of(context).pop(),
-              child: const Text('Cancel'),
-            ),
-            TextButton(
-              onPressed: () {
-                final task = TaskModel(
-                  time: "",
-                  name: nameController.text,
-                  description: descriptionController.text,
-                  status: TaskStatus.todo.name,
-                );
-                _taskBloc.add(AddTaskEvent(task));
-                Navigator.of(context).pop();
-              },
-              child: const Text('Submit'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -98,22 +46,18 @@ class _HomeScreenState extends State<HomeScreen> {
           padding: EdgeInsets.symmetric(horizontal: 20.0),
           child: Icon(Icons.task, color: Colors.white),
         ),
-        title: const AppBarButton(),
+        title: AppBarButton(),
         centerTitle: false,
       ),
       body: BlocBuilder<TaskBloc, TaskState>(
         bloc: _taskBloc,
         builder: (context, state) {
-          return Stack(
-            children: [
+          return 
               TaskList(
-                taskBloc: _taskBloc,
-                state: state,
-                onTaskDropped: _onTaskDropped,
-              ),
-              AddTaskButton(onPressed: () => _showAddTaskDialog(context)),
-            ],
-          );
+            taskBloc: _taskBloc,
+            state: state,
+            onTaskDropped: _onTaskDropped,
+          ); 
         },
       ),
     );

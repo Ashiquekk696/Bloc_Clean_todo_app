@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTextStyles {
-  static final TextStyle headingLarge = GoogleFonts.poppins(
+  static final TextStyle headingLarge = GoogleFonts.montserrat(
     fontSize: 24,
     fontWeight: FontWeight.bold,
     color: Colors.black,
   );
 
-  static final TextStyle headingMedium = GoogleFonts.poppins(
+  static final TextStyle headingMedium = GoogleFonts.montserrat(
     fontSize: 20,
     fontWeight: FontWeight.w600,
     color: Colors.black,
   );
 
-  static final TextStyle headingSmall = GoogleFonts.poppins(
+  static final TextStyle headingSmall = GoogleFonts.montserrat(
     fontSize: 18,
     fontWeight: FontWeight.w500,
     color: Colors.black,

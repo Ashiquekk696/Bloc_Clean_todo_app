@@ -1,29 +1,39 @@
-# kinzy_todo_app
+Todo App
+A simple Todo app built with Flutter following the principles of Clean Architecture. The app utilizes BLoC for state management, GetIt for Dependency Injection, and Hive for local storage.
+
+Features
+Create, read, update, and delete tasks.
+Tasks are persisted locally using Hive.
+State management is handled by BLoC.
+Dependency Injection using GetIt for managing app dependencies.
+Technologies Used
+Flutter - Cross-platform app development framework.
+BLoC - State management pattern.
+Clean Architecture - Organizes code to ensure separation of concerns.
+GetIt - Service locator for Dependency Injection.
+Hive - Lightweight NoSQL database for local storage.
+Architecture
+This app follows Clean Architecture, dividing the code into several layers:
+
+Data Layer - Responsible for managing data (local storage with Hive).
+Domain Layer - Contains the business logic, models, and use cases.
+Presentation Layer - Responsible for UI components and state management with BLoC.
 
 
-# kinzy_todo
+### Setup
 
-Prerequisite knowledge for understanding the code:
+To get started with the app, clone this repository and install the required dependencies.
 
-a)Flutter_bloc for State management
-
-b)HIVE Local storage
-
-c)Clean Architecture
-
-d)GetIt Dependency Injection
-
-Features Integrated-
-
-Have integrated Authentication (Signup,Login and Logout) using Local storage Hive.
-
-Have used Bloc State Management for managing state of app.
-
-Have used Clean Architecture for well structuring of code 
-
-Adding task using hive (Pressing add task button)
-
-Updating task ( Use pencil icon)
-
-
-
+## Clone the repo:
+ 
+`git clone https://github.com/yourusername/todo-app.git
+`
+`cd todo-app
+`
+# Install the dependencies:
+ 
+`flutter pub get
+`Run the app:
+ 
+`flutter run
+`

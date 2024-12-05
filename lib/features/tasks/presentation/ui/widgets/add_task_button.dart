@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:kinzy_todo_app/core/widgets/app_button.dart';
 
@@ -12,15 +11,12 @@ class AddTaskButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-      top: 10,
-      left: 10,
-      child: SizedBox(
-        width: 150,
-        child: CustomButton(
-          onPressed: onPressed,
-          text: "Add Task",
-        ),
+    return SizedBox(
+      width: 150,
+      child: CustomButton(
+        isAddTask: true,
+        onPressed: onPressed,
+        text: "Add Task",
       ),
     );
   }

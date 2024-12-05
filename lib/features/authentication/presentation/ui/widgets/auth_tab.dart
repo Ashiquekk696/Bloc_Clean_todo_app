@@ -8,18 +8,18 @@ import 'package:kinzy_todo_app/features/authentication/presentation/bloc/auth_st
 import 'tab_button.dart';
 
 class AuthTab extends StatelessWidget {
-  const AuthTab({super.key,required this.authBloc});
+  const AuthTab({super.key, required this.authBloc});
   final AuthBloc authBloc;
 
   @override
   Widget build(BuildContext context) {
-    // Retrieve AuthBloc from GetIt 
+    // Retrieve AuthBloc from GetIt
 
     return BlocBuilder<AuthBloc, AuthState>(
       bloc: authBloc, // Explicitly passing the BLoC from GetIt
       builder: (context, state) {
         return Row(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             TabButton(
               text: AppConstants.login,

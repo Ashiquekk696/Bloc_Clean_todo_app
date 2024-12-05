@@ -9,7 +9,7 @@ class LoaderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Center(
       child: CircularProgressIndicator(
-        valueColor: AlwaysStoppedAnimation<Color>(Color(AppColors.primaryColor)), // You can customize the color
+        valueColor: AlwaysStoppedAnimation<Color>(Color(AppColors.primaryColor)),  
       ),
     );
   }

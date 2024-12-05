@@ -23,7 +23,7 @@ class TabButton extends StatelessWidget {
         decoration: BoxDecoration(
           color:
               isSelected ? Colors.white : const Color(AppColors.primaryColor),
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(15),
         ),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         child: Text(text,
