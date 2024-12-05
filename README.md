@@ -28,13 +28,13 @@ To get started with the app, clone this repository and install the required depe
  
 `git clone https://github.com/yourusername/todo-app.git
 `
-Enter the Todo App
+Enter the Todo App  
 `cd todo-app
 `
-Install the dependencies and Run:
+Install the dependencies and Run:  
  
 `flutter pub get
 `
-Run the app: 
+Run the app:   
 `flutter run
 `
