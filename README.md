@@ -57,6 +57,7 @@ Run the app:
 ## File Structure 
 
 
+```plaintext
 lib/
 ├── core/                 # Core utilities, constants, helpers
 │   ├── utils/            # Utility functions, helpers
