@@ -12,7 +12,8 @@ Features:
 Create, read, update, and delete tasks.
 Tasks are persisted locally using Hive.
 State management is handled by BLoC.
-Dependency Injection using GetIt for managing app dependencies.           
+Dependency Injection using GetIt for managing app dependencies.     
+      
 Technologies Used:  
 Flutter - Cross-platform app development framework.  
 BLoC - State management pattern.  
